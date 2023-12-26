@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Student Information</h1>
+    <div>
+            <label >รหัสนิสิต:</label>&nbsp;
+            <input type="text" id="txtID" name="txtID" placeholder="กรอกรหัสนิสิต">&nbsp;
+            <br><br>
+
+            <label >ชื่อ:</label>&nbsp;
+            <input type="text" id="txtName" name="txtName" placeholder="กรอกชื่อ">&nbsp;
+            <br><br>
+
+            <label >นามสกุล:</label>&nbsp;
+            <input type="text" id="txtSurname" name="txtSurname" placeholder="กรอกนามสกุล">&nbsp;
+            <br><br>
+
+            <label >เพศ:</label>&nbsp;
+            <input type="radio" id="radSex" name="radSex" >ชาย&nbsp;&nbsp;
+            <input type="radio" id="radSex" name="radSex" >หญิง&nbsp;&nbsp;
+            <br><br>
+
+            <label >มือถือ:</label>&nbsp;
+            <input type="tel" id="txtMobile" name="txtMobile" placeholder="รูปแบบ xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+            <br><br>
+
+            สาขา :
+            <select name = "lstMajor">
+            <option value="กรุณาเลือกสาขา" placeholder = "กรุณาเลือกสาขา"selected>กรุณาเลือกสาขา</option>
+            <option value = "DropDownList"> คณิตศาสตร์ </option>
+            <option value = "DropDownList"> เคมี </option>
+            <option value = "DropDownList"> ชีววิทยา </option>
+            <option value = "DropDownList"> ฟิสิกส์ </option>
+            <option value = "DropDownList"> วิทยาการคอมพิวเตอร์ </option>
+            <option value = "DropDownList"> เทคโนโลยีสารสนเทศ </option>
+            <option value = "DropDownList"> สถิติ </option>
+            <br><br>
+
+
+            อีเมลล์:&nbsp;
+            <input type="text" id="email" name="email" placeholder="กรอกอีเมลล์"&nbsp;>
+            <br><br>
+
+            <label >ความถนัด:&nbsp;
+            <input type="checkbox" id="radSex" name="radSex" >โปรแกรมมิ่ง&nbsp;&nbsp;
+            <input type="checkbox" id="radSex" name="radSex" >ออกแบบ&nbsp;&nbsp;
+            </label>
+            <br><br>
+
+
+            <label >เว็บไซต์:</label>&nbsp;
+            <input type="text" id="txtWeb" name="txtWeb" placeholder="กรอกเว็บไซต์"&nbsp;>
+            <br><br>
+
+
+           วันเกิด:&nbsp; 
+            <select> 
+                <input type="date" name="txtHBD">&nbsp;
+            </select>
+            <br><br>
+
+
+            <label >จังหวัด:</label>&nbsp;
+            <select id="lstPrpvince" name="lstPrpvince" placeholder="พิษณุโลก"&nbsp;>
+            <option value="กำแพงเพชร">กำแพงเพชร</option>&nbsp;
+            <option value="พิจิต">พิจิต</option><br><br>&nbsp;
+            <option value="พิษณุโลก">พิษณุโลก</option>&nbsp;
+            <option value="สุโขทัย">สุโขทัย</option><br><br>&nbsp;
+            
+            <br><br>
+
+
+            ที่อยู่:​&nbsp;
+            <textarea name="txtArea" rows="4" cols="40">​
+                </textarea>
+            <br><br>
+
+
+            <label >รายได้พ่อแม่ (บาท):</label>&nbsp;
+            <input type="number" id="txtIncom" name="txtIncom" >&nbsp;
+            <br><br>
+
+            <button  style="margin-left: 80px;" onclick="alert(check.thml)">บันทึก</button>
+            <button onclick="reset">ยกเลิก</button>
+    </form>
+</div>
+
+
+</body>
+</html>
