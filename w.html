@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .center{
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        height: 100vh; 
+    }
+    form {
+        border: 2px solid #111010;
+        padding: 10px;
+        height: auto;
+        width: 600px;
+        background: #f8b6f3 
+    }
+    input[type = "text"]{
+        background-color: aqua;
+    }
+    select {
+        background-color: #e5ffb5;
+    }
+    textarea {
+        background-color: antiquewhite;
+    
+    }
+    button{
+        font: bold;
+        margin-right: 50px;
+        width: 100;
+        height: 300;
+    }
+</style>
+<body>
+    <div class = "center">
+        <form action="/action_page.php">
+            <label for = "fname" style = "margin-right :5px;">First Name :</label>&nbsp;
+            <input type = "text" id = "fname" name="firstname" placeholder="Natthaphon">&nbsp;&nbsp;&nbsp;
+            <label for = "lname" style = "margin-right :5px;" >Last Name :</label>&nbsp;
+            <input type = "text" id = "lname" name="lastname"  style = "margin-right: 30px;" placeholder = "Chaithiangtham">
+            <p></p> 
+            <label for = "age" style = "margin-right : 50px;">Age :</label>&nbsp;
+            <select id = "age" name = "age"  width = "200px" height = "30px">
+                <option value = "18">18</option>
+                <option value = "19">19</option>
+                <option value = "20">20</option>
+                <option value = "21">21</option>
+            </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for = "major" style="margin-right: 5px;">Major :</label>
+            <select id = "major" name = "major" width = "500px" height = "100px">
+                <option value = "IT">IT sefgwegwegwefweT</optgroup>
+                <option value = "CS">CS ewtfwegvwgwegweS</option>
+            </select>
+            <p></p>
+            <label for = "birthdaay" name = "birthday" style="margin-right: 25px;">Birthday :</label>
+            <input type="date" name="bday">
+            <p></p>
+            <label for = "add" name = "add" style="margin-right:28px;">Address :</Address></label>
+            <textarea id = "add" name = "add" width = "500px" height = "100px"></textarea>
+            <p></p>
+            <textarea id = "add" name = "add" style = "width:20px;height:100;"></textarea> 
+            <p></p>
+            <label for="email" style="margin-right: 38px;">E-mail :</label>
+            <input type="email" id = "email" name = "email">
+            <p></p>
+            <label for ="password" style="margin-right:20px;">Password :</label>
+            <input type="password" name = "password">
+            <p></p>
+            <label for = "colors" style="margin-right: 35px;">Colors :</label>
+            <input type = "checkbox" id = "colors" name=" red" value ="red">Red &nbsp;&nbsp;
+            <input type = "checkbox" id = "colors" name = "green" value = "green">Green &nbsp;&nbsp;
+            <p>
+            </p>
+            <label for ="color" style="margin-right: 10px;">Color Favorite:</label>
+            <input type = "color" name = "color" value = "color">
+            <p></p>
+            <input type ="submit" value="submit" >
+            <p></p>
+            <button type ="button" value="save" onclick="alert('Save เรียบร้อย')">Save</button>
+            <button type = "button" value="cancle" >Cancle</button>
+            <button type = "reset" >Reset</button>
+        </form>
+        
+    </div>
+
+</body>
+</html>
